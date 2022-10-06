@@ -3,6 +3,7 @@
     <head>
     <title>Musicians</title>
       <h1>Musician guess by Sindhuja Anchuri</h1>
+    </head>
 <body>
 
     <form>
@@ -56,8 +57,34 @@
     </script>
 
 
+    <div class="container">
+    <img src="ant.jpg" class="img-fluid" onclick="swapImage()" id="Image" width="100px" height="100px " alt="insect" >
+    <p id="result">Image Replacement</p>
+    </div>
+    <script>
+        var useImage= 1
+        function swapImage(){
+            switch(useImage){
+                case 1: 
+                document.getElementById("Image").src="ant.jpg";
+                useImage =  2;
+                break;
+                case 2:
+                document.getElementById("Image").src="honeybee.jpg";
+                useImage=3;
+                break;
+                case 3:
+                document.getElementById("Image").src="robberfly.jpg";
+                useImage=1;
+                break;
+            }
+        }
+    </script>
+
+
+
 
 
 </body>
-    </head>
+    
 </html>
